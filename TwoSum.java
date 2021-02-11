@@ -1,14 +1,24 @@
-package org.VISA;
+package org.GoldManSachs;
 
 public class TwoSum {
-    public int[] twoSum(int[]nums,int target) {
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = i + 1; j < nums.length; j++) {
-                if (nums[j] == target - nums[i]) {
-                    return new int[]{i, j};
-                }
-            }
+    public int[] twoSum(int[] nums, int target) {
+for(int i=0;i<nums.length;i++)
+{
+    for(int j=i+1;j<nums.length;j++)
+    {
+        if(nums[j]==target-nums[i])
+        {
+            return new int[]{i,j};
         }
-        throw new IllegalArgumentException();
+    }
+}
+        throw new IllegalArgumentException("No two sum solution");
+    }
+
+    public static void main(String[] args) {
+        int[] nums= {2,7,11,15};
+        int target=9;
+        TwoSum two= new TwoSum();
+        System.out.println(two.twoSum(nums,target));
     }
 }
