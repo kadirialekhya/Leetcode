@@ -1,5 +1,9 @@
 package org.TopLeetcode;
 
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+
 public class RemoveDuplicatesfromSortedList_83 {
     public ListNode deleteDuplicates(ListNode head) {
 ListNode current=head;
@@ -15,5 +19,11 @@ while(current!=null&&current.next!=null)
     }
 }
 return head;
+    }
+
+    @Override
+    public String toString() {
+        Collections.sort(null);
+        return super.toString();
     }
 }
